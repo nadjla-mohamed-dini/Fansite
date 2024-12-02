@@ -1,0 +1,92 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    background: #F28500;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+/*encadré de la nav*/
+section {
+    background-color: #25252525;
+    border: 1px solid #444;
+    padding: 20px;
+    margin: 20px auto;
+    width: 93.5%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/*titre principale*/
+header h1 {
+
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/*nav avec les different onglet*/
+nav {
+    margin-top: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: lightgray;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contact-form input,
+  .contact-form select,
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px ;
+    border-radius: 5px;
+  }
+  .contact-form button {
+    background-color: #F28500;
+    color:white;
+    border: none;
+    cursor: pointer;
+  }
+  .contact-form button:hover {
+    background-color: orangered;
+  }
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .checkbox-container input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  h1 {
+    text-align: center;
+  }
