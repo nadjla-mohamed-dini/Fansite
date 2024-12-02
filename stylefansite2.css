@@ -1,0 +1,243 @@
+/* Styles général */
+body {
+font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,#59504a,#363124,black);
+    color: #f5f5f5;
+}
+
+/* En-tête */
+header {
+    background-color: #f28500;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff; 
+    font-size: 2.5em;
+}
+/*encadré de la nav*/
+section {
+    background-color: #25252525;
+    border: 1px solid #444;
+    padding: 20px;
+    margin: 20px auto;
+    width: 93.5%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Présentation */
+.presentation {
+    padding: 20px;
+    background-color: #00000042;
+    border: 1px solid #444;
+    margin: 20px;
+    border-radius: 5px;
+    color: #f5f5f5; 
+    text-align: center; 
+    font-size: 1.5em; 
+    margin-bottom: 15px; 
+}
+
+.presentation h2 {
+    color: #f5f5f5;
+}
+
+/* Encadré de la navigation */
+section {
+    background-color: #00000042; 
+    border: 1px solid #444; 
+    padding: 20px; 
+    margin: 20px auto; 
+    width: 93.7%; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+/* Liens dans la navigation */
+section ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+section ul li a {
+    color: #f5f5f5;
+    text-decoration: none; 
+    font-size: 1.2em;
+}
+
+section ul li a:hover {
+    text-decoration: underline; 
+    color: #f5f5f5; 
+}
+
+section h2 {
+    color: #f5f5f5; 
+    text-align: center; 
+    font-size: 1.5em; 
+    margin-bottom: 15px; 
+}
+
+/* Actualités */
+.actualites {
+    padding: 20px;
+    background-color: #00000042;
+    border: 1px solid #444;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.actualites h2 {
+    color: #f5f5f5;
+}
+
+/* Réalisations */
+.realisation {
+    padding: 20px;
+    background-color: #00000042;
+    border: 1px solid #444;
+    margin: 20px;
+    border-radius: 5px;
+    color: #f5f5f5;
+}
+
+/* Événements */
+.evenements {
+    padding: 20px;
+    background-color: #00000042;
+    border: 1px solid #444;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.evenements h2,
+.evenements h3 {
+    color: #f5f5f5;
+}
+
+/* Galerie */
+.galerie {
+    padding: 20px;
+    background-color: #00000042;
+    border: 1px solid #444;
+    margin: 20px;
+    border-radius: 5px;
+    color: #f5f5f5;
+}
+
+.conteneur_mosaique {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 20px;  
+    justify-items: center; 
+    margin-top: 20px;
+}
+
+.conteneur_mosaique img {
+    width: 200px;  
+    height: 200px; 
+    object-fit: cover;  
+    border-radius: 5px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.conteneur_mosaique img:hover {
+    transform: scale(2.2);  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+}
+
+@media (max-width: 600px) {
+    .conteneur_mosaique {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));  
+    }
+    .conteneur_mosaique img {
+        width: 150px;  
+        height: 150px;
+    }
+}
+
+
+
+/* Liens */
+.liens {
+    padding: 20px;
+    background-color: #00000042;
+    border: 1px solid #444;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.liens ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.liens li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.liens li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #191919;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+.footer-section h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 5px 0;
+}
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-section ul li a:hover {
+    color: #ff6347;
+}
+.footer-credit {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
