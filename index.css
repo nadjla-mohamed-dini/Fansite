@@ -1,0 +1,118 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,#59504A,#363124,black);
+
+}
+header {
+    background: #F28500;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+/*titre principale*/
+header h1 {
+    
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/*nav avec les different onglet*/
+nav {
+    margin-top: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bloc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.image {
+    flex: 1 1 300px;
+    text-align: center;
+    margin: 10px;
+}
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+.image p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+footer {
+    background-color : #191919;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+.footer-section h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 5px 0;
+}
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-section ul li a:hover {
+    color: #ff6347;
+}
+.footer-credit {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header nav a {
+        margin: 0 15px;
+    }
+    header nav {
+        display: row;
+        justify-content: center;
+
+    }
+    header nav a {
+        display : block;
+        margin: 10px;
+    }
+}
