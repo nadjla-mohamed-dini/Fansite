@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    background: linear-gradient(to right,#59504a,#363124,black);
+    color: white;  
+    
+}
+
+header{
+    background: #f28500;
+    font-style:italic;
+    text-align: center;
+    padding: 20px 0 ;
+}
+
+.fansite1{
+    text-align:end
+
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+.texte{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px ;
+    font-style: italic; 
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.actuTitre{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px; 
+    font-style: italic; 
+    text-align: center;
+    
+}
+.actuTexte{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px; 
+    font-style: italic; 
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bandeDessineesTitre{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px; 
+    font-style: italic; 
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.bandeDessinees {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px; 
+    font-style: italic; 
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.realisationTexe{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px; 
+    font-style: italic; 
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bandeDessineesFilms{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+   
+}
+.evenementsPasses{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+.evenementPassesTitre{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px; 
+    font-style: italic; 
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.liens{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px; 
+        font-style: italic; 
+        text-align: center;
+
+
+}
+.reseaux{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px; 
+        font-style: italic; 
+        text-align: center;
+}
+
+.autresLiens{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px; 
+        font-style: italic; 
+        text-align:center
+}
+.liensSitesFansTitre{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px; 
+        font-style: italic; 
+        text-align: center;
+
+}
+section, a{ 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: orange;
+    
+}
+.TitreVideo{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.video{
+    text-align: center;
+}
+
+footer {
+    background-color: #191919;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+.footer-section h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 5px 0;
+}
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-section ul li a:hover {
+    color: #ff6347;
+}
+.footer-credit {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+
+/*mobile*/
+@media (min-width: 320px) and (max-width: 720px){
+    body{
+        margin: 0;
+       text-align: center;
+       
+    
+    }
+
+.texte{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px; 
+    font-style: italic; 
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;}
+
+.image{
+    max-width: 95%; 
+    min-width: 60%;
+    padding-left: 45px;
+    padding-right: 45px;
+    height: auto; 
+    
+    }
+
+.actuTitre{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px; 
+    font-style: italic; 
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px
+    }
+
+.actuTexte{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px; 
+    font-style: italic; 
+     text-align: center;
+     padding-left: 45px;
+     padding-right: 45px;}
+
+
+
+.bandeDessineesTitre{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;  
+    font-style: italic; 
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+                       }    
+     
+.bandeDessinees {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px; 
+    font-style: italic; 
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+       }
+
+
+}
+.realisationTexe{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px; 
+    font-style: italic; 
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    
+}
+
+.bandeDessineesFilms{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-right: 0px;
+    padding-left:0px;
+}
+
+
+
+
