@@ -1,0 +1,290 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,#59504A,#363124,black);
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+}
+/* mettre une video*/
+.video-av {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.video-av video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+/*degrader de couleur de la banniere*/
+header {
+    background: #F28500;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+/* Police du titre principale*/
+header h1 {
+    
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* les different onglet*/
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* partie prensentation centrer le texte et l'image+ sa legende*/
+.flo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.flo img {
+    display: block;
+    margin: auto;
+    width: 40%;
+    
+}
+.flo figcaption {
+    margin-top: 10px;
+    font-size: 1em;
+    color: white;
+}
+.bienvenue h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+p  {
+    padding-left: 10px;
+    color: white;
+}
+
+/*encadrement des photos + les mettre au centre*/
+.photos {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.photo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.photo img {
+    width: calc(33% - 20px);
+    align-items: center;
+    height: auto;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+/* le footer */
+footer {
+    background-color: #191919;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+.footer-section h3 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 5px 0;
+}
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-section ul li a:hover {
+    color: #ff6347;
+}
+.footer-credit {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+/* media queries pour les petits ecran*/
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        text-align: center;
+    }
+    .photo {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    header nav a {
+        display : block;
+        margin: 10px;
+    }
+    .video-background video {
+        min-width: auto;
+        min-height: 100%;
+    }
+}
+
+/* discographie(encadrement des photos + centrage)*/
+
+.single {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.single-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.single-1 img {
+    width: calc(33% - 20px);
+    height: auto;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+.ep img {
+    width: calc(33% - 20px);
+    height: auto;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+.ep {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.album {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.album img {
+    width: calc(33% - 20px);
+    height: auto;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+h3  {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+/*actualite*/
+p {
+    color: white;
+}
+.essaie {
+    color: orangered;
+}
+
+/* Concert encadrement des dates */
+
+.tour {
+    border: 5px solid orangered;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    
+}
+.tour a {
+    color: white;
+}
+.tour a:hover {
+    color: orangered;
+}
+.concert {
+    text-align: center;
+}
+.concert a {
+    display: block;
+    margin: 10px 0;
+}
+.rs .concert a {
+    color: orangered;
+}
+
+/*lien dans la navigation*/
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+section ul li a {
+    color: orangered;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+section ul li a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+section h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+ul li h3 {
+    text-align: left;
+}
+.rs .concert a {
+    color: orangered;
+}
